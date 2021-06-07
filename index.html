@@ -9,44 +9,18 @@
       href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
     <link rel="stylesheet" href="./custom-style.css" />
-    <title>Exams Table</title>
+    <title>Countdown</title>
   </head>
   <body>
     <div id="background-container"></div>
     <div class="ui middle aligned center aligned grid" id="page-container">
       <div class="column">
         <div class="ui container">
-          <h1 class="ui center inverted header" id="counter">
-            Countdown
-            <p id="countdown"></p>
-          </h1>
-        </div>
-        <div class="ui container" id="exams-table">
-          <table
-            class="ui unstackable inverted celled structured padded large table"
-          >
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th class="center aligned">Subject</th>
-                <th>
-                  <div
-                    class="ui button fluid"
-                    id="switcher"
-                    onclick="switchColorMode()"
-                  >
-                    <i class="sun icon"></i>
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody id="exams"></tbody>
-          </table>
+          <h1 class="ui center inverted huge header" id="countdown"></h1>
         </div>
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
     <script src="./script.js"></script>
   </body>
