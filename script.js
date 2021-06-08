@@ -1,12 +1,16 @@
 const $ = document.querySelector.bind(document);
 
 (() => {
-  const END_DATE = new Date(2023, 4, 1);
+  /*
+   *   month :
+   *   0 jan, 1 feb, 2 march, 3 apr
+   */
+  const END_DATE = new Date(2023, 3); //  april 2023
 
   if (isItOver(END_DATE)) return showEndParagraph();
 
   // Get today's date and time
-  const now = new Date().getTime();
+  const now = new Date();
 
   // Find the distance between now and the count down date
   const distance = END_DATE - now;
