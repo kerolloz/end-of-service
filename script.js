@@ -22,7 +22,6 @@ const $ = document.querySelector.bind(document);
 
   // If the count down is over
   if (distance < 0) {
-    clearInterval(countDownInterval);
     showEndParagraph();
   }
 })();
