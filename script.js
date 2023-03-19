@@ -31,6 +31,6 @@ function isItOver(endDate) {
 }
 
 function showEndParagraph() {
-  $("#counter").innerHTML =
+  $("#countdown").innerHTML =
     "<p> YOU <em> SURVIVED </em> IT! <br>Enjoy your life! </p>";
 }
